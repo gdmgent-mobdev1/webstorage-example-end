@@ -1,4 +1,4 @@
-# 1920-mobdev1-code-template
+# Webstorage Example (end)
 
 ## Included
 * SASS (and SCSS)

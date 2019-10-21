@@ -2,14 +2,143 @@
  * The main.css styles
  */
 
-body {
-    font-size: 12px;
-    margin: 0 auto;
-    background: #fefefe;
-    height: 100vh;
+*{
+    margin:0;
+    padding:0;
 }
+
+body {
+    margin:0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+      "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: #fff;
+    font-size: 14px;
+}
+
+h1 {
+    font-size: 32px;
+    margin-bottom: 1em;
+}
+
+h2 {
+    font-size: 21px;
+}
+
+h3 {
+    font-size: 16px;
+    margin-bottom: 0.5em;
+}
+
+p {
+    margin-bottom: 1em;
+}
+
+
+/**
+ * Typography
+ */
+
+.largeFont {
+    font-size: 16px;
+}
+
+/**
+ * Elements
+ */
+
+button {
+    box-shadow:inset 0px 1px 0px 0px #ffffff;
+    background:linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
+    background-color:#ffffff;
+    border-radius:6px;
+    border:1px solid #dcdcdc;
+    display:inline-block;
+    cursor:pointer;
+    color:#666666;
+    font-family:Arial;
+    font-size:15px;
+    font-weight:bold;
+    padding:6px 24px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #ffffff;
+}
+
+button:hover {
+	background:linear-gradient(to bottom, #f6f6f6 5%, #ffffff 100%);
+	background-color:#f6f6f6;
+}
+
+button:active {
+	position:relative;
+	top:1px;
+}
+
+input[type='text'],
+textarea {
+    padding: 8px;
+    font-size: 1em;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+}
+
+/**
+ * Layout styles
+ */
 
 #app {
     height: 100%;
     position: relative;
+}
+
+#appWrapper {
+    padding: 30px;
+    width:40%;
+    margin: auto;
+}
+
+.appContainer {
+    margin-bottom: 2em;
+}
+
+.appContainerTitle {
+    border-bottom: 1px solid #DDD;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+}
+
+/**
+ * Indexed DB
+ */
+
+#indexedDBForm {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #dcdcdc;
+    padding-bottom: 15px;
+}
+
+#indexedDBData .indexedDbPost:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+#indexedDBData .indexedDbPost {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #dcdcdc;
+}
+
+#indexedDBData .indexedDbPostContent {
+    margin-bottom: 20px;
+}
+
+#indexedDBData .btnIndexedDbRemovePost {
+    font-size: 11px;
+    background: #FFF;
 }

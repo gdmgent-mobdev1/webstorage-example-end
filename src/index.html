@@ -17,6 +17,50 @@
     </head>
     <body>
         <div id="app">
+            <div id="appWrapper">
+                <div id="mainTitle">
+                    <h1>Webstorage</h1>
+                </div>
+                <div id="localStorageContainer" class="appContainer">
+                    <div class="appContainerTitle">
+                        <h2>Localstorage</h2>
+                    </div>
+                    <div class="appContainerContent">
+                        <button id="btnAddLocalStorage">Add Local Storage</button>
+                    </div>
+                </div>
+                <div id="sessionStorageContainer" class="appContainer">
+                    <div class="appContainerTitle">
+                        <h2>Sessionstorage</h2>
+                    </div>
+                    <div class="appContainerContent">
+                        <button id="btnAddSessionStorage">Add Session Storage</button>
+                    </div>
+                </div>
+                <div class="appContainer">
+                    <div class="appContainerTitle">
+                        <h2>IndexedDB</h2>
+                    </div>
+                    <div class="appContainerContent">
+                        <div id="indexedDBForm">
+                            <form>
+                                <p>
+                                    <label>Title</label><br>
+                                    <input id="txtIndexedDbTitle" type="text" name="title">
+                                </p>
+                                <p>
+                                    <label>Content</label>
+                                    <textarea id="txtIndexedDbContent"></textarea>
+                                </p>
+                                <p>
+                                    <button id="btnIndexedDbAddPost">Add Post</button>
+                                </p>
+                            </form>
+                        </div>
+                        <div id="indexedDBData"></div>
+                    </div>
+                </div>
+            </div>
         </div>
     </body>
 </html>
